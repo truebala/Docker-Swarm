@@ -1,0 +1,70 @@
+Docker swarm
+================
+
+3 Machines
+(Docker Manager,Docker 2 Nodes)
+
+(Docker Manager and Docker Nodes)
+===================================
+Install the docker and start the services
+
+Docker manager
+===================
+docker swarm init -advertise-addr (ipaddressofdockerswarm)
+copy the command and paste in the dockler nodes machines 
+
+docker node ls
+* means node server
+
+docker info (check in the 3 machines)
+
+Leaving the Cluster Node
+========================
+docker swarm leave
+
+Checking
+=============
+docker node ls
+
+Remove the Docker node
+=====================
+docker node rm (id)
+docker swarm leave --force
+docker node js
+
+create it again
+===============
+docker swarm init -advertise-addr (ipaddressofdockerswarm)
+copy the command and paste in the dockler nodes machines 
+
+
+Tokens (Manager and Node)
+===========================
+docker swarm join-token worker
+docker swarrm join-token manager
+
+Docker service and replicas
+===================
+docker service create --name myservice --replicas 3 --publish 80:80 httpd
+docker service ps myservice
+docker ps
+docker rm -f servivename
+docker ps (it will recreated)
+Browse the ip and check
+docker service rm myservice
+docker service create --name myservice --replicas 6 --publish 80:80 httpd
+
+Inspecting
+===============
+docker service inspect --pretty demo
+
+
+
+
+
+
+
+
+
+
+
