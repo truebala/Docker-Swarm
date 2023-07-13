@@ -58,6 +58,13 @@ Inspecting
 ===============
 docker service inspect --pretty demo
 
+docekr swarm componests:
+service: Represents a part of the feature of an application
+Task : A Single part of work
+manager : This manages the work among the nodes
+worker : which works for a specific purpose of the service
+
+
 
 
 
