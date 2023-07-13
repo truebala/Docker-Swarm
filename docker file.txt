@@ -1,0 +1,70 @@
+docker file:
+
+How to set up docker in Your local system:
+
+pls find the below process to setup docker in your local system using commands in terminal
+
+yum install docker -y
+This command is used to install a docker in linux
+
+docker --version
+This command is used to check the version of the docker
+
+docker version
+This command is used to check the client and docker engine details
+
+docker images
+This command is used to check the list of images in our local
+
+docker search image
+This command is used to see all the images 
+
+docker pull imagename
+This command is used to pull only image
+
+docker run
+This command is used to get the container 
+
+docker info
+This command is used to see the all the information about the docker in your terminal
+
+docker ps -a
+it will show the all containers
+
+docker ps
+it will show the only running containers
+
+docker run -it --name newname imagename
+it will use to give our name to container and directly we can enter into the container
+here -it means (interactive mode)
+
+docker run -itd --name  imagename
+it will use to give our name to container but we can't enter into the container directly
+and it is always in starting stage 
+
+docker commit containername newimagename
+This command is used to create a new image from the container then we will use this command
+
+docker run -it --name newcontainername newimage
+This command is used to copy the files from one container to another container then we will use this command
+
+docker volume create volumename
+if u want to create a empty volume then we will use below command
+
+docker volume rm volumename
+if u want to remove a volume from your local then we will use above command
+ 
+docker volume inspect volumeid
+if u want to see the whole details of your volume then we will use above command
+
+docker container inspect contname
+if u want to see the whole details of your container then we will use above command
+
+docker volume prune
+if u want to delete the unused volume then we will use above command
+
+DOCKER SWARM
+
+docker swarm init --advertise-addr ipadress
+docker swarm leave
+docker swarm rm 
