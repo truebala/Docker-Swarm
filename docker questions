@@ -1,0 +1,35 @@
+what is docker?
+docker is an contanirization tool where we can add all our applications along with its dependencies is known as docker and it is an opensource orchestration tool.
+and users can run this at any environment.
+  
+what is container?
+container is nothing but a machine,and its doesn't have any os.
+  
+what is contanerization?
+contanerization is nothing but adding the applications along with its dependencies is known as contanerization.
+
+  what are the all the components located in docker?
+  docker server Or docker client
+  docker hub or docker engine
+  docker registry
+
+  what is docker server?
+  where we can keep all our images and containers is known as docker client
+  what is docker hub ?
+  docker hub is nothing but our local repository where we can get the all our local images is known as docker hub.
+  what is docker registry?
+  docker registry is nothing where we can get the all our images or any services from outside is known as docker registry.
+
+  what is Docker file?
+  docker file is nothing but the we can give a set of instruction and we can from here we can do anything
+
+  what are the componens present in the docker file?
+  FROM : this tag will be used to take our base image
+  RUN : We can run and execute all our and it will create a upper layercommands through this tag
+  ENV : Environment variables
+  COPY : If u want to copy the files from our local repository to container then we will use this command
+  ADD : If u want to copy any outsourcing file to our container then we will use this commands
+  CMD : If u want to start any service then we will use this tag
+  EXPOSE : If u want to assign any port number we will use this tag
+  
+  
