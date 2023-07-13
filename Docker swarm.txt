@@ -64,6 +64,9 @@ Task : A Single part of work
 manager : This manages the work among the nodes
 worker : which works for a specific purpose of the service
 
+WHAT IS DOCKER SWARM MEAN?
+docker swarm is nothing but a orchestration tool where we can manage multiple container at the same time this is called docker swarm.
+
 
 
 
