@@ -1,0 +1,26 @@
+Kubernetes:
+why kubernetes is come into the picture if we have already docker?
+-----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+problems we will get using docker in production environment:-
+Ans: Basically docker is having only single host and it is having short life
+autoscaling 
+auto healing : its nothing but let suppose if u have 100 containers in one single host then if first container is taking more cpu or memory utilization then it will effect on 50th and 100th container and the containers will die bcoz of this issue
+docker doesn't supports the enterpise architecture
+and to overcome this issue kubernetes is come into the picture.
+
+Solutions for the above problems using kubernetes:-
+--------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+By deafult it's actually using cluster architecture that means the first container will use more memory then 99th or 100th container get defect regarding this
+on this situation what kubernetes will do is it will create one more instead of that particular node
+Basically in kubernetes we have the replication controller using that we can overcome the autoscaling problem
+Example:
+if u have one container and that container is having the capacity of 10,000 user and if anycase any festivals like christamas or deepavali etc will come
+the load will increase on that particular time what we can do is we can go to the replication controller.yaml file we will configure it according
+to that it will work.
+problem:3
+let take we have some 50 containers and we are managing that containers using docker manager or anything if one of your container is going down
+then the kubernetes what he will do is that will automatically create one more container orelse it will regenerate the container this will be done in autohealing
